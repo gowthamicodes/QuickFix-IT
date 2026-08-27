@@ -491,7 +491,7 @@ function Service() {
       }
       try {
         const response = await fetch(
-  `http://localhost:5000/api/payment/check-access/${encodeURIComponent(service)}`,
+  `https://quickfix-it.onrender.com/api/payment/check-access/${encodeURIComponent(service)}`,
   {
     method: "GET",
     headers: {

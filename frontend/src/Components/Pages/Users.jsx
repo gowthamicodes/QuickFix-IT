@@ -11,7 +11,7 @@ const {users, setUsers} = useContext(AuthContext)
         const token = localStorage.getItem("token");
         try {
           const response = await fetch(
-            "http://localhost:5000/api/users",
+            "https://quickfix-it.onrender.com/api/users",
             {
               method: "GET",
               headers: {

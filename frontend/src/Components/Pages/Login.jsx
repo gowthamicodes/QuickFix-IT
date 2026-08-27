@@ -30,7 +30,7 @@ function Login() {
       }
       try {
         const response = await fetch(
-          "http://localhost:5000/api/users/signup",
+          "https://quickfix-it.onrender.com/api/users/signup",
           {
             method: "POST",
             headers: {
@@ -95,7 +95,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/users/login",
+        "https://quickfix-it.onrender.com/api/users/login",
         {
           method: "POST",
           headers: {

@@ -27,7 +27,7 @@ function Payment() {
 
             // 1. Ask backend to create Razorpay order
             const response = await fetch(
-                "http://localhost:5000/api/payment/create-order",
+                "https://quickfix-it.onrender.com/api/payment/create-order",
                 {
                     method: "POST",
                     headers: {
@@ -73,7 +73,7 @@ function Payment() {
                     try {
 
                         const verifyResponse = await fetch(
-                            "http://localhost:5000/api/payment/verify-payment",
+                            "https://quickfix-it.onrender.com/api/payment/verify-payment",
                             {
                                 method: "POST",
 
