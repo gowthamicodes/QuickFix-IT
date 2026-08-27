@@ -1,0 +1,138 @@
+.logincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+}
+
+.loginform {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.loginform h2 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.formfield {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* .password-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.password-wrapper .formfield {
+  flex: 1;
+}
+
+.password-btn {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e6f0ff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.password-btn:hover {
+  background: blue;
+  color: white;
+} */
+
+.loginbutton,
+.signupbutton {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  /* background: #1565c0; */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  /* background-color: #519bf5; */
+  background: #38bdf8;
+
+  
+    /* background: linear-gradient(135deg, #ff5a1f, #ff8c42); */
+
+}
+
+.loginbutton:hover,
+.signupbutton:hover {
+  /* background: #0d47a1; */
+      background: linear-gradient(135deg, #054ca2, #60a5fa);
+
+
+}
+
+.switch-text {
+  text-align: center;
+  font-size: 15px;
+}
+
+.switch-text button {
+  margin-left: 8px;
+}
+
+.snackbar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .loginform {
+    max-width: 380px;
+    padding: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .logincontainer {
+    padding: 15px;
+  }
+
+  .loginform {
+    padding: 22px;
+    border-radius: 12px;
+  }
+
+  .loginform h2 {
+    font-size: 24px;
+  }
+
+  .formfield,
+  .loginbutton,
+  .signupbutton
+  {
+    font-size: 15px;
+  }
+/* 
+  .password-wrapper {
+    gap: 8px;
+  } */
+}

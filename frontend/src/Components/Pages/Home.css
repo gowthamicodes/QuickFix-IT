@@ -1,0 +1,177 @@
+/* =========================================
+   HERO WRAPPER
+========================================= */
+
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   HOME IMAGE
+========================================= */
+
+.home-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================================
+   EXPLORE SERVICES
+========================================= */
+
+.hero-explore-link {
+  position: absolute;
+
+  left: 6.1%;
+  top: 41%;
+
+  width: 16%;
+  height: 5.5%;
+
+  z-index: 10;
+
+  display: block;
+
+  cursor: pointer;
+    /* background: rgba(255, 251, 0, 0.2); */
+
+  background: transparent;
+
+  transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   CONTACT US
+========================================= */
+
+.hero-contact-link {
+  position: absolute;
+
+  left: 24%;
+  top: 41%;
+
+  width: 12%;
+  height: 5.5%;
+
+  z-index: 20;
+
+  display: block;
+
+  cursor: pointer;
+
+  background: transparent;
+    /* background: rgba(255, 0, 0, 0.2); */
+
+  transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.hero-explore-link:hover,
+.hero-contact-link:hover {
+  /* background: rgba(235, 248, 56, 0.947); */
+  background: rgba(56, 189, 248, 0.25);
+
+  border-radius: 10px;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+
+/* =========================================
+   TABLET
+   769px - 1024px
+========================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero-explore-link {
+    left: 6%;
+    top: 41%;
+
+    width: 17%;
+    height: 6%;
+  }
+
+  .hero-contact-link {
+    left: 24%;
+    top: 41%;
+
+    width: 13%;
+    height: 6%;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   481px - 768px
+========================================= */
+
+@media (min-width: 481px) and 
+(max-width: 768px) {
+ 
+  .hero-wrapper {
+    position: relative;
+  }
+
+  .hero-explore-link,
+  .hero-contact-link {
+    position: absolute;
+    display: block;
+    z-index: 20;
+  }
+
+  /* Explore Services */
+  .hero-explore-link {
+    left: 3%;
+    top: 24.5%;
+    width: 30%;
+    height: 4%;
+  }
+
+  /* Contact Us */
+  .hero-contact-link {
+    left: 3%;
+    top: 30%;
+    width: 30%;
+    height: 4%;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   480px AND BELOW
+========================================= */
+
+@media (max-width: 480px) {
+  /* Explore Services button */
+  .hero-explore-link {
+    left: 3%;
+    top: 25.5%;
+    width: 32%;
+    height: 4%;
+  }
+
+  /* Contact Us button */
+  .hero-contact-link {
+    left: 3%;
+    top: 29.5%;
+    width: 30%;
+    height: 4%;
+  }
+
+}

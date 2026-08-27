@@ -1,0 +1,233 @@
+/* ================================
+   SERVICE ACCESS PAGE
+================================ */
+
+.service-access-page {
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+
+  background: #f4f8ff;
+}
+
+
+/* ================================
+   SERVICE ACCESS CARD
+================================ */
+
+.service-access-card {
+  width: 100%;
+  max-width: 650px;
+
+  padding: 45px 40px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.12);
+
+  border: 1px solid #dbeafe;
+}
+
+
+/* ================================
+   SUCCESS ICON
+================================ */
+
+.access-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
+/* ================================
+   MAIN HEADING
+================================ */
+
+.service-access-card h1 {
+  margin-bottom: 15px;
+
+  color: #1e3a8a;
+
+  font-size: 32px;
+}
+
+
+/* ================================
+   INTRO TEXT
+================================ */
+
+.access-intro {
+  max-width: 500px;
+
+  margin: 0 auto 25px;
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* ================================
+   SERVICE NAME
+================================ */
+
+.service-access-card h2 {
+  margin: 20px 0 12px;
+
+  color: #2563eb;
+
+  font-size: 25px;
+}
+
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.service-access-card p:not(.access-intro) {
+  color: #475569;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+
+
+/* ================================
+   ACCESS BUTTON
+================================ */
+
+.access-btn {
+  display: inline-block;
+
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+.access-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Click */
+
+.access-btn:active {
+  transform: translateY(0);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+  .service-access-page {
+    padding: 30px 15px;
+  }
+
+  .service-access-card {
+    padding: 35px 25px;
+  }
+
+  .service-access-card h1 {
+    font-size: 28px;
+  }
+
+  .service-access-card h2 {
+    font-size: 22px;
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .service-access-page {
+    min-height: calc(100vh - 70px);
+
+    padding: 25px 12px;
+  }
+
+  .service-access-card {
+    padding: 30px 20px;
+
+    border-radius: 14px;
+  }
+
+  .access-icon {
+    width: 60px;
+    height: 60px;
+
+    font-size: 30px;
+  }
+
+  .service-access-card h1 {
+    font-size: 25px;
+  }
+
+  .service-access-card h2 {
+    font-size: 21px;
+  }
+
+  .access-intro,
+  .service-access-card p:not(.access-intro) {
+    font-size: 15px;
+  }
+
+  .access-btn {
+    width: 100%;
+
+    padding: 12px 20px;
+  }
+
+}

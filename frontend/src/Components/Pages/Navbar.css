@@ -1,0 +1,494 @@
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.home-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: 65px;
+
+  padding: 10px 4%;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  align-items: center;
+
+  column-gap: 25px;
+
+  z-index: 100;
+  position:sticky;
+
+  /* Hide the navbar already inside the image */
+  background: rgba(11, 26, 61, 0.96);
+  
+}
+
+
+/* =========================================================
+   QUICKFIX IT LOGO
+========================================================= */
+
+.logo {
+  /* position: relative;
+  z-index: 2; */
+
+  white-space: nowrap;
+}
+.logo a {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  color: white;
+
+  transition: color 0.3s ease;
+}
+
+/* Logo hover */
+.logo a:hover {
+  color: #38bdf8;
+}
+
+/* Blue line under logo */
+.logo a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+
+  background: #38bdf8;
+
+  transition: width 0.3s ease;
+}
+
+/* Show line */
+.logo a:hover::after {
+  width: 100%;
+}
+
+/* Blue Q icon */
+
+.logo-icon {
+    width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #2563a8;
+  color: white;
+
+  border-radius: 6px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: bold;
+
+  line-height: 1;
+
+}
+
+
+/* QuickFix IT */
+
+.logo-name {
+  color: white;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 28px;
+  font-weight: bold;
+
+  line-height: 1;
+}
+
+
+/* IT in blue */
+
+.logo-name span {
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.nav-links {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 28px;
+
+  min-width: 0;
+}
+
+.nav-links a {
+    position: relative;
+
+  color: white;
+  text-decoration: none;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;
+
+}
+
+
+/* =========================================================
+   AUTH SECTION
+========================================================= */
+
+.auth-section {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  white-space: nowrap;
+}
+/* Underline */
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #60a5fa;
+
+  transition: width 0.3s ease;
+}
+
+
+/* Show line on hover */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================================================
+   LOGIN / LOGOUT
+========================================================= */
+
+.login-btn,
+.logout-btn {
+  background: #5e49ff;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 10px 20px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover,
+.logout-btn:hover {
+  background: #4835d4;
+}
+
+
+/* =========================================================
+   USERNAME
+========================================================= */
+
+.username-btn {
+  background: white;
+  color: #1d4ed8;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 10px 16px;
+
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+.username-btn:hover {
+  background: #d4b2effb;
+}
+
+/* =========================================================
+   EXPLORE SERVICES CLICKABLE AREA
+========================================================= */
+/* =================================
+   HAMBURGER MENU
+================================= */
+
+.hamburger-btn {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .navbar {
+    padding-left: 3%;
+    padding-right: 3%;
+
+    column-gap: 20px;
+  }
+
+  .logo-name {
+    font-size: 27px;
+  }
+
+  .logo-icon {
+    width: 31px;
+    height: 31px;
+
+    font-size: 19px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .login-btn,
+  .logout-btn {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+   TABLET + MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 8px 20px;
+
+    background: rgba(5, 12, 28, 0.96);
+    backdrop-filter: blur(6px);
+  }
+
+  /* Logo stays on the left */
+  .logo {
+    width: auto;
+    text-align: left;
+  }
+
+  .logo-name {
+    font-size: 24px;
+  }
+
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 17px;
+  }
+
+  /* Hamburger */
+  .hamburger-btn {
+    display: block;
+
+    margin-left: auto;
+
+    color: white;
+    font-size: 28px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    padding: 5px;
+  }
+
+  /* Hide menu by default */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show menu when hamburger is clicked */
+  .nav-links.active {
+    display: flex;
+
+    position: absolute;
+
+    top: 65px;
+    left: 0;
+
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 20px 0;
+
+    /* background: rgba(5, 12, 28, 0.98); */
+
+    background: rgba(5, 12, 28, 0.45);
+
+    backdrop-filter: blur(8px);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  /* Hide login/logout normally */
+  .auth-section {
+    display: none;
+  }
+
+  /* Show login/logout when menu is open */
+  .auth-section.active {
+    display: flex;
+
+    position: absolute;
+
+    top: 190px;
+    left: 0;
+
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px 0 20px;
+
+    background: rgba(5, 12, 28, 0.45);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+  }
+
+  .login-btn,
+  .logout-btn,
+  .username-btn {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .navbar {
+    padding: 7px 12px;
+  }
+
+  .logo-name {
+    font-size: 20px;
+  }
+
+  .logo-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+  }
+
+  .hamburger-btn {
+    font-size: 25px;
+  }
+
+  .nav-links.active {
+    top: 58px;
+  }
+
+}

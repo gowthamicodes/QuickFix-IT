@@ -1,0 +1,236 @@
+/* ================================
+   PAYMENT PAGE
+================================ */
+
+.payment-page {
+  min-height: 100vh;
+
+  padding: 120px 20px 60px;
+
+  background: #f5f9ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+/* ================================
+   PAYMENT CARD
+================================ */
+
+.payment-card {
+  width: 100%;
+  max-width: 550px;
+
+  padding: 40px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  border: 1px solid #dbeafe;
+
+  box-shadow:
+    0 10px 30px rgba(30, 64, 175, 0.12);
+
+  text-align: center;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.payment-card h1 {
+  color: #1d4ed8;
+
+  font-size: 30px;
+
+  margin-bottom: 12px;
+}
+
+.payment-intro {
+  color: #64748b;
+
+  font-size: 15px;
+
+  margin-bottom: 25px;
+}
+
+
+/* ================================
+   SERVICE
+================================ */
+
+.payment-service {
+  padding: 18px;
+
+  background: #eff6ff;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 12px;
+
+  margin-bottom: 30px;
+}
+
+.payment-service h2 {
+  color: #172554;
+
+  font-size: 21px;
+
+  margin-bottom: 8px;
+}
+
+.payment-price {
+  color: #2563eb;
+
+  font-size: 27px;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   QR SECTION
+================================ */
+
+.qr-section h3 {
+  color: #172554;
+
+  font-size: 20px;
+
+  margin-bottom: 15px;
+}
+
+.qr-box {
+  width: 210px;
+  height: 210px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+
+  border: 2px solid #2563eb;
+
+  border-radius: 12px;
+}
+
+.dummy-qr {
+  width: 170px;
+  height: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #111 0px,
+      #111 5px,
+      white 5px,
+      white 10px
+    );
+
+  color: white;
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  text-shadow:
+    0 0 4px black;
+
+  border: 8px solid white;
+}
+
+.qr-section p {
+  color: #475569;
+
+  font-size: 14px;
+
+  margin-bottom: 6px;
+}
+
+.qr-section small {
+  color: #94a3b8;
+
+  font-size: 12px;
+}
+
+
+/* ================================
+   PAID BUTTON
+================================ */
+
+.paid-btn {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 13px 20px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.paid-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .payment-page {
+    padding: 100px 15px 40px;
+  }
+
+  .payment-card {
+    padding: 25px 20px;
+
+    border-radius: 14px;
+  }
+
+  .payment-card h1 {
+    font-size: 26px;
+  }
+
+  .qr-box {
+    width: 190px;
+    height: 190px;
+  }
+
+  .dummy-qr {
+    width: 150px;
+    height: 150px;
+  }
+
+}
