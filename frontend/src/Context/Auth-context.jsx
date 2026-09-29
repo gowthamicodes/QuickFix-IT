@@ -47,6 +47,8 @@ export const AuthProvider = ({ children }) => {
 
   //   setIsLoggedIn(true);
 
+
+  
   //   // setCurrentUser(user);
 
   //   localStorage.setItem("isLoggedIn", "true");

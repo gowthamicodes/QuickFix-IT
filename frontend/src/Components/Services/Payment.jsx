@@ -202,10 +202,3 @@ function Payment() {
 export default Payment;
 
 
-// Network	    Card Number	           Card Type	Card Sub Type	CVV & Expiry Date
-// Visa        4100 2800 0000 1007	    Debit	     Consumer	     Use a random CVV and any future date
-// Mastercard	5555 5100 0008 1006  	Credit	     Business
-// Mastercard	5180 2872 0009 1001 	Prepaid	     Consumer
-// RuPay	    6527 6589 0000 1005	    Credit	     Consumer
-// Diners	    3608 280009 1007	    Credit	     Consumer
-// Amex	    3402 560004 01007       Credit	     Consumer

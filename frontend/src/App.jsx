@@ -21,7 +21,7 @@ import ServiceAccess from "./Components/Services/Service-Access"
 import ServiceData from "./Components/Services/Service-Data"
 import Overview from './Components/Pages/Overview';
 import ProtectedRoute from './Routes/Protected-routes';
-
+import Users from "./Components/Pages/Users"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -84,7 +84,12 @@ function App() {
             </ProtectedRoute>
             }
           />
-
+<Route path="/users"
+            element={<ProtectedRoute>
+              <Users />
+            </ProtectedRoute>
+            }
+          />
           {/* <Route path="/technology-selection"
             element={isLoggedIn ? (
               <TechnologySelection />

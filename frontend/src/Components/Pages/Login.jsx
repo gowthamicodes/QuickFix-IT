@@ -188,7 +188,8 @@ console.log("LOGIN USER:", responseData.user);
 
         <input className='formfield' type="email" id="email" name="email" placeholder="Email" value={form.email} onChange={handleChange} />
 
-        <input className='formfield' type="password" id="password" name="password" placeholder="Password" value={form.password} onChange={handleChange} />
+        <input className='formfield' type="password" id="password" name="password" placeholder="Password" value={form.password}
+         onChange={handleChange} />
 
         <p className="switch-text">
           {isSignup ? "Already have an account?" : "Don't have an account?"}

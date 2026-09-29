@@ -66,4 +66,3 @@ state: {
 
 export default PaymentSuccess;
 
-                // key: "rzp_test_TRyWXkEqAfeujJ",
