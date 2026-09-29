@@ -1,5 +1,4 @@
 
-
 const jwt = require("jsonwebtoken");
 
 const bcrypt = require("bcryptjs")
@@ -19,7 +18,7 @@ const getAllUsers = async (_req, res) => {
 const getSignup = async (req, res) => {
     // console.log("BODY:", req.body);
     const { name, email, password } = req.body;
-
+    
     let existingUser
     try {
         existingUser = await Users.findOne({ email: email })
